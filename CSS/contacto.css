@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.container-contact{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "element1 element1 element1 element1 element1 element1"
+  "element1 element1 element1 element1 element1 element1"
+  "element3 element3 element3 element3 element3 element3"
+  "element3 element3 element3 element3 element3 element3"
+  "element3 element3 element3 element3 element3 element3"
+  "element3 element3 element3 element3 element3 element3";
+  overflow-x: hidden;
+}
+
+.header-container-contact{
+  grid-area: element1;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-contact{
+  width: 50%;
+  display: flex;
+  text-align: end;
+  align-content: center;
+  color: blueviolet;
+  position: absolute;
+  top: 40px;
+  cursor: text;
+  font-family: 'Mulish', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  
+}
+
+.card-container-contact{
+  width: 90%;
+  height: 95%;
+  margin: 0 auto;
+  grid-area: element3;
+  display: flex;
+}
+
+.element-contact{
+  position: relative;
+  top: 15px;
+  width: 25%;
+  height: 90%;
+  /* outline: 1px solid black; */
+  border-radius: 10px;
+  box-shadow: 9px 9px 30px #929292,
+             -9px -9px 30px #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.jennifer-contact, .julissa-contact, .samuel-contact{
+  margin-right: 20px;
+}
+
+.jennifer-contact{
+  background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+.picture-jeni{
+  position: absolute;
+  top: -50px;
+  width: 170px;
+  height: 170px;
+  background-image: url("../CSS/jennifer.svg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.julissa-contact{
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+}
+
+.picture-juli{
+  position: absolute;
+  top: -50px;
+  width: 170px;
+  height: 170px;
+  background-image: url("../CSS/julissa.svg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.samuel-contact{
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.picture-samu{
+  position: absolute;
+  top: -50px;
+  width: 170px;
+  height: 170px;
+  background-image: url("../CSS/samuel.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.angel-contact{
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.picture-angel{
+  position: absolute;
+  top: -50px;
+  width: 170px;
+  height: 170px;
+  background-image: url("../CSS/angel.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%; 
+}
+
+.nombre-contact{
+  position: absolute;
+  top: 33%;
+  color: white;
+  font-family: 'Mulish',sans-serif;
+  letter-spacing: 2px;
+  cursor: text;
+}
+
+.ul-contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45%;
+}
+
+.li-contact{
+  width: 90%;
+  color: white;
+  font-family: 'Mulish',sans-serif;
+  font-size: 15px;
+  list-style: none;
+  display: inline-block;
+  margin: 2px auto;
+}
+
+

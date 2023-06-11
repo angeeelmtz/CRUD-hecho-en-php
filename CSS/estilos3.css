@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	font-family:'open sans';
+    display: flex;
+}
+.table-container{
+    width: 1000px;
+    height: 550px;
+    margin: 100px 150px;
+}
+
+.table-container{
+    width: 1000px;
+    margin-top: 1px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #ab548875;  
+    background: -webkit-linear-gradient(to top, hsla(279, 68%, 19%,0.459), hsla(324, 100%, 50%, 0.459));
+ /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgba(97, 26, 136, 0.544), hsla(324, 100%, 50%, 0.459));
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
+}
+
+
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+body{
+    width: 100%;
+	height: 550px;
+    background: #ab548875;  
+    background: -webkit-linear-gradient(to top, hsla(279, 68%, 19%,0.459), hsla(324, 100%, 50%, 0.459)), url(../CSS/estudiante.png);
+ /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgba(97, 26, 136, 0.544), hsla(324, 100%, 50%, 0.459)), url(../CSS/estudiante.png);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background-size: cover ;
+    background-attachment: fixed;
+    position: relative;
+ }
+tbody{
+    text-decoration: none;
+color: white;
+}
+
+
+

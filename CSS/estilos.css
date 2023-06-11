@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.container-inicio{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "element1 element1 element1 element1"
+  "element2 element2 element3 element3"
+  "element2 element2 element3 element3"
+  "element2 element2 element3 element3"
+  "element2 element2 element3 element3";
+}
+
+.header-inicio{
+  width: 100vw;
+  grid-area: element1;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  box-shadow: rgba(148, 148, 148, .3) 0 2px 6px;
+}
+
+.menu{
+  height: 100%;
+  background-color: #ffffff;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.menu-logo{
+  cursor: pointer;
+}
+
+.title-inicio-span{
+  color: blueviolet;
+}
+
+.menu-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu-links{
+  height: 100%;
+  display: flex;
+}
+
+.menu-link{
+  color: black;
+  text-decoration: none;
+  padding: 0 30px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu-link:hover{
+  color: blueviolet;
+}
+
+
+.text-inicio{
+  position: relative;
+  bottom: 45px;
+  width: 100%;
+  height: 100%;
+  /* outline: 3px solid; */
+  grid-area: element2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-text{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title-inicio{
+  position: relative;
+  bottom: 40px;
+  left: 20px;
+  display: inline-block;
+  font-family: 'Mulish', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  cursor: text;
+}
+
+.parrafo-inicio{
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.picture-inicio{
+  position: absolute;
+  bottom: 45px;
+  right: 110px;
+  width: 100%;
+  height: 100%;
+  /* outline: 3px solid; */
+  grid-area: element3;
+}
+
+.cont-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img1-inicio{
+  position: absolute;
+  top: -20px;
+  width: 450px;
+  height: 550px;
+}
+
+.img2-inicio{
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 450px;
+  height: 550px;
+}
+
+span{
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.form{
+  /* background-color: rgb(255, 255, 255); */
+  background: rgba(0, 0, 0, 0.33);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+  margin: auto;
+  padding: 20px 3em;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Mulish',sans-serif;
+  position: absolute;
+  right: 300px;
+  top: 200px;
+}
+
+.form-title{
+  font-size: 2em;
+  margin-bottom: .8em;
+  color: white;
+}
+
+.form-container{
+  margin-top: 30px;
+  display: grid;
+  gap: 30px;
+}
+
+.form-group{
+  position: relative;
+  --color: #fff;
+}
+
+.form-input{
+  width: 100%;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+}
+
+.form-input:focus + .form-label{
+  transform: translateY(-12px) scale(.9);
+  transform-origin: left top;
+  color: #fff;
+  
+}
+
+ .form-input:not(:placeholder-shown) + .form-label{
+  transform: translateY(-12px) scale(.9);
+  transform-origin: left top;
+  color: #fff;
+ }
+
+.form-label{
+  color: var(--color);
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+  font-weight: 700;
+}
+
+.form-btn{
+  background: white;
+  color: blueviolet;
+  font-family: 'Mulish',sans-serif;
+  font-weight:700;
+  font-size: 1rem;
+  padding: 0.5em 0;
+  border: none;
+  border-radius: .5em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
